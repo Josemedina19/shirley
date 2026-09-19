@@ -1,0 +1,878 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <!-- 📱 ADAPTACIÓN PARA CELULAR -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="theme-color" content="#ff1688">
+
+    <title>
+        Para El Amor De Mi Vida ❤️
+    </title>
+
+    <link rel="stylesheet" href="amor.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         🎵 MÚSICA
+    ========================================================== -->
+
+    <audio id="musica" loop>
+
+        <source
+            src="cancion/Bruno Mars - Just the way you are _ Sub Español_Inglés [13jQjFQmTFw].mp3"
+            type="audio/mpeg"
+        >
+
+    </audio>
+
+
+
+    <!-- =========================================================
+         🔐 PANTALLA DE PIN
+    ========================================================== -->
+
+    <div id="login" class="activo">
+
+        <div class="login-corazon">
+            ❤️
+        </div>
+
+
+        <h2>
+            🔒 Ingresa tu PIN
+        </h2>
+
+
+        <p class="subtitulo">
+            Una pequeña sorpresa para ti mi sushi ❤️
+        </p>
+
+
+        <div class="decoracion-login">
+            🌻 Vez no serás espectadora 🌻
+        </div>
+
+
+        <!-- =====================================================
+             🔢 PIN DE 6 DÍGITOS
+        ====================================================== -->
+
+        <input type="password" id="pinInput" maxlength="6" autocomplete="off" autofocus inputmode="numeric" pattern="[0-9]*" placeholder="••••••" readonly aria-label="PIN de 6 dígitos">
+
+
+        <p class="mensaje-pin">
+            Introduce nuestra fecha mi amor 💗
+        </p>
+
+
+
+        <!-- =====================================================
+             🔢 TECLADO NUMÉRICO
+        ====================================================== -->
+
+        <div class="teclado">
+
+
+            <button type="button" onclick="agregarNumero('1')" aria-label="Número 1">
+                1
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('2')" aria-label="Número 2">
+                2
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('3')" aria-label="Número 3">
+                3
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('4')" aria-label="Número 4">
+                4
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('5')" aria-label="Número 5">
+                5
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('6')" aria-label="Número 6">
+                6
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('7')" aria-label="Número 7">
+                7
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('8')" aria-label="Número 8">
+                8
+            </button>
+
+
+            <button type="button" onclick="agregarNumero('9')" aria-label="Número 9">
+                9
+            </button>
+
+
+            <!-- BORRAR -->
+
+            <button type="button" onclick="borrar()" aria-label="Borrar">
+                ←
+            </button>
+
+
+            <!-- CERO -->
+
+            <button type="button" onclick="agregarNumero('0')" aria-label="Número 0">
+                0
+            </button>
+
+
+            <!-- ENTRAR -->
+
+            <button type="button" id="botonEntrar" class="boton-entrar" aria-label="Entrar">
+                ✔
+            </button>
+
+
+        </div>
+
+
+        <!-- =====================================================
+             ❌ MENSAJE DE ERROR
+        ====================================================== -->
+
+        <p id="error" role="alert" aria-live="polite"></p>
+
+
+    </div>
+
+
+
+    <!-- =========================================================
+         ❤️ CONTENIDO PRINCIPAL
+    ========================================================== -->
+
+    <div id="principal" class="oculto">
+
+
+        <!-- =====================================================
+             ❤️ ENCABEZADO
+        ====================================================== -->
+
+        <header class="encabezado">
+
+
+            <div class="brillo-titulo">
+                ✨ ❤️ ✨
+            </div>
+
+
+            <h1>
+                ❤️ Para Mi sumith ❤️
+            </h1>
+
+
+            <div class="intro-recuerdos">
+
+                <p>
+                    Hice este pequeño espacio para guardar algunos de nuestros recuerdos.
+                </p>
+
+
+                <p>
+                    Cada recuerdo contigo es algo que quiero guardar siempre. ❤️
+                </p>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =====================================================
+             💌 MENSAJE ESPECIAL
+        ====================================================== -->
+
+        <section class="mensaje">
+
+
+            <div class="decoracion">
+                ❤️ ✨ 💕 ✨ ❤️
+            </div>
+
+
+            <h2>
+                ❤️ Para ti, mi amor
+            </h2>
+
+
+            <p>
+                Espero de corazón que te guste este pequeño regalo que preparé para ti. ❤️
+            </p>
+
+
+            <p>
+                Quizás no sea el regalo más grande ni el más perfecto del mundo, pero lo hice pensando en ti, en nosotros y en todos esos momentos que hemos compartido. Cada foto, cada video y cada palabra que encuentres aquí tiene un poquito de todo lo que siento por
+                ti.
+            </p>
+
+
+            <p>
+                Y quiero que sepas algo...
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Este 21 de septiembre no quiero que seas
+                    solamente una espectadora de este regalo. 🌹❤️
+                </strong>
+
+            </p>
+
+
+            <p>
+                Quiero que seas la protagonista de este momento, porque todo esto fue creado especialmente para ti. Quiero verte sonreír, emocionarte y guardar este día como uno de esos pequeños momentos que algún día recordaremos con mucho cariño.
+            </p>
+
+
+            <p>
+                Tal vez esta página solo sea una pequeña sorpresa, pero detrás de ella hay muchas horas, muchos recuerdos y, sobre todo, muchísimo amor.
+            </p>
+
+
+            <p>
+                Porque tú mereces detalles bonitos, mereces sentirte querida y mereces saber lo importante que eres para mí.
+            </p>
+
+
+            <p>
+                Espero que cuando llegues hasta el final sonrías y entiendas que detrás de cada detalle hay un
+                <strong>“te amo”</strong> que quizás no siempre sé cómo decirte con palabras.
+            </p>
+
+
+            <p>
+                Y si pudiera pedir un deseo para este 21 de septiembre, sería muy sencillo:
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Que podamos seguir creando recuerdos juntos
+                    y que esta página algún día se quede pequeña
+                    para guardar todo lo que todavía nos falta vivir. ❤️
+                </strong>
+
+            </p>
+
+
+            <p>
+                Feliz 21 de septiembre, mi amor. 🌹
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Espero que te guste mi regalo...
+                </strong>
+
+            </p>
+
+
+            <p>
+
+                <strong>
+                    pero sobre todo, espero que te guste saber
+                    cuánto te amo. ❤️
+                </strong>
+
+            </p>
+
+
+            <p>
+                Con todo mi amor,
+            </p>
+
+
+            <p>
+
+                <strong>
+                    Tu monito araña 🐒❤️
+                </strong>
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             📸 GALERÍA
+        ====================================================== -->
+
+        <section class="galeria">
+
+
+            <h2>
+                📸 Nuestros recuerdos
+            </h2>
+
+
+            <p class="descripcion">
+                Algunas fotos que quiero guardar siempre.
+            </p>
+
+
+            <div class="imagenes">
+
+
+                <div class="foto">
+                    <img src="fotosevideos/1.jpeg" alt="Recuerdo 1" loading="lazy">
+                    <span>
+                        ❤️ Un recuerdo especial
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/2.jpeg" alt="Recuerdo 2" loading="lazy">
+                    <span>
+                        💕 Un momento bonito
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/3.jpeg" alt="Recuerdo 3" loading="lazy">
+                    <span>
+                        🥰 Siempre tú
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/4.jpeg" alt="Recuerdo 4" loading="lazy">
+                    <span>
+                        ❤️ Un momento para recordar
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/5.jpeg" alt="Recuerdo 5" loading="lazy">
+                    <span>
+                        💖 Para siempre
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/6.jpeg" alt="Recuerdo 6" loading="lazy">
+                    <span>
+                        💕 Un recuerdo más
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/7.jpeg" alt="Recuerdo 7" loading="lazy">
+                    <span>
+                        ❤️ Momentos contigo
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/8.jpeg" alt="Recuerdo 8" loading="lazy">
+                    <span>
+                        🥰 Mi persona favorita
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/9.jpeg" alt="Recuerdo 9" loading="lazy">
+                    <span>
+                        💗 Siempre en mi corazón
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/10.jpeg" alt="Recuerdo 10" loading="lazy">
+                    <span>
+                        ❤️ Un recuerdo especial
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/11.jpeg" alt="Recuerdo 11" loading="lazy">
+                    <span>
+                        💕 Momentos inolvidables
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/12.jpeg" alt="Recuerdo 12" loading="lazy">
+                    <span>
+                        ❤️ Contigo
+                    </span>
+                </div>
+
+
+                <div class="foto">
+                    <img src="fotosevideos/32.jpeg" alt="Recuerdo 13" loading="lazy">
+                    <span>
+                        💖 Un recuerdo más
+                    </span>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ❤️ SEPARADOR
+        ====================================================== -->
+
+        <div class="separador">
+
+            <span>❤️</span>
+            <span>💕</span>
+            <span>❤️</span>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             🎬 VIDEOS
+        ====================================================== -->
+
+        <section class="videos">
+
+
+            <h2>
+                🎬 Nuestros videos
+            </h2>
+
+
+            <p class="descripcion">
+                Y algunos momentos que también quiero conservar por lo mucho que te amo.
+            </p>
+
+
+            <div class="contenedor-videos">
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/13.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Nuestro recuerdo
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/14.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💕 Un momento contigo
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/15.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Un recuerdo especial
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/16.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        🥰 Momentos bonitos
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/17.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💗 Siempre juntos
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/18.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Para recordar
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/19.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💕 Un momento más
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/20.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Mi recuerdo favorito
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/21.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        🥰 Contigo
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/22.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💖 Un momento especial
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/23.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💕 Un recuerdo bonito
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/24.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Para siempre
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/25.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💗 Momentos juntos
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/26.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        🥰 Un recuerdo más
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/27.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Siempre tú
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/28.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💕 Un momento inolvidable
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/29.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        ❤️ Un recuerdo especial
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/30.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💖 Para ti
+                    </h3>
+
+                </div>
+
+
+                <div class="video-card">
+
+                    <video controls autoplay muted loop playsinline preload="metadata">
+                        <source
+                            src="fotosevideos/31.mp4"
+                            type="video/mp4"
+                        >
+                    </video>
+
+                    <h3>
+                        💕 Nuestro momento
+                    </h3>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ❤️ FINAL
+        ====================================================== -->
+
+        <section class="final">
+
+
+            <div class="corazon-grande">
+                ❤️
+            </div>
+
+
+            <h2>
+                Gracias por estar en mi vida
+            </h2>
+
+
+            <p>
+                No importa cuántos recuerdos tengamos, siempre quiero seguir creando muchos más contigo.
+            </p>
+
+
+            <p class="te-amo">
+                Te amo mucho ❤️
+            </p>
+
+
+            <p>
+                de tu monito araña te amoooooooooooooooooooooooooooooooooooo
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ✨ EFECTOS
+        ====================================================== -->
+
+        <div class="corazones"></div>
+
+        <div class="estrellas"></div>
+
+        <div class="particulas"></div>
+
+
+    </div>
+
+
+
+    <!-- =========================================================
+         📱 CONFIGURACIÓN TÁCTIL
+    ========================================================== -->
+
+    <script>
+        document.addEventListener("touchstart", function() {}, {
+            passive: true
+        });
+    </script>
+
+
+    <!-- =========================================================
+         💻 JAVASCRIPT PRINCIPAL
+    ========================================================== -->
+
+    <script src="amor.js"></script>
+
+
+</body>
+
+</html>
